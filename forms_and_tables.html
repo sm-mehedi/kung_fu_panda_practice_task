@@ -5,48 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice on forms and tables</title>
     <style>
-        .form{
+        .form {
             display: flex;
             flex-direction: column;
         }
-        #comment{
+        #comment {
             height: 100px;
             width: 500px;
         }
-        .div2{
-
+        .div2 {
             padding: 0px;
             margin: 0vh;
             margin-top: 30px;
-
-            
         }
-        table{
+        table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 1px;
+            border: 2px solid black;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        th, td{
-        border: 2px solid black;
-        text-align: center;
-        padding: 8px;
-    }
-    caption{
-        caption-side: top;
-        margin-bottom: 10px;
-    }
-    .thead1{
-        font-weight: bold;
-    }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        caption {
+            caption-side: top;
+            margin-bottom: 10px;
+        }
+        .thead1 {
+            font-weight: bold;
+        }
     </style>
-
-    
 </head>
 <body>
     <hr>
     <p>Search your Image here:
         <input type="search" name="KungFuPanda" id="KFP">   
-    <button>Search</button></p>
+        <button>Search</button>
+    </p>
     <div>
         <img src="./images/kfp.png" alt="KungFuPanda" id="kfp">
     </div>
@@ -59,59 +59,53 @@
         <label for="Date">Date</label>
         <input type="date">
         <label for="comment">Comment</label>
-<textarea name="Comment" id="comment">
-
-</textarea>
-
+        <textarea name="Comment" id="comment"></textarea>
     </div>
-<div class="div2">
-    <button>Submit</button>
-
-
-</div>
-<hr>
-
-<table>
-    <caption>Practice</caption>
-    <thead>
-        <tr>
-        <th class="A">Taha</th>
-        <th class="A1">Shabira</th>
-        <th class="A">Mim</th>
-        <th class="A">Rafid</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <TR>
-            <td>11</td>
-            <td>22</td>
-            <td>33</td>
-            <td>44</td>
-        </TR>
-        <tr class="thead1">
-            <td>50</td>
-            <td>60</td>
-            <td>90</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Meaow</td>
-            <td>Meaow</td>
-            <td>Meaow</td>
-            <td>Meaow</td>
-        </tr>
-
-    </tbody>
-    <tfoot>
-        <td colspan="4">End</td>
-    </tfoot>
-</table>
-      
+    <div class="div2">
+        <button>Submit</button>
+    </div>
+    <hr>
+    <table>
+        <caption>Practice</caption>
+        <thead>
+            <tr>
+                <th class="A">Taha</th>
+                <th class="A1">Shabira</th>
+                <th class="A">Mim</th>
+                <th class="A">Rafid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>22</td>
+                <td>33</td>
+                <td>44</td>
+            </tr>
+            <tr class="thead1">
+                <td>50</td>
+                <td>60</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Meaow</td>
+                <td>Meaow</td>
+                <td>Meaow</td>
+                <td>Meaow</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">End</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
