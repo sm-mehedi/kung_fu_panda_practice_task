@@ -21,7 +21,26 @@
 
             
         }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+        border: 2px solid black;
+        text-align: center;
+        padding: 8px;
+    }
+    caption{
+        caption-side: top;
+        margin-bottom: 10px;
+    }
+    .thead1{
+        font-weight: bold;
+    }
     </style>
+
+    
 </head>
 <body>
     <hr>
@@ -53,7 +72,45 @@
 <hr>
 
 <table>
-    
+    <caption>Practice</caption>
+    <thead>
+        <tr>
+        <th class="A">Taha</th>
+        <th class="A1">Shabira</th>
+        <th class="A">Mim</th>
+        <th class="A">Rafid</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <TR>
+            <td>11</td>
+            <td>22</td>
+            <td>33</td>
+            <td>44</td>
+        </TR>
+        <tr class="thead1">
+            <td>50</td>
+            <td>60</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Meaow</td>
+            <td>Meaow</td>
+            <td>Meaow</td>
+            <td>Meaow</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <td colspan="4">End</td>
+    </tfoot>
 </table>
       
 </body>
